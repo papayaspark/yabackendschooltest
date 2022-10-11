@@ -1,35 +1,3 @@
-# Примечание для проверяющего
-Если это возможно, пожалуйста, измените файл
- 
-`/homes/entrant/backendschooltest/backendvenv/bin/gunicorn_start`,
- 
-заменив
-```
-DJANGO_SETTINGS_MODULE=hello.settings             # which settings file should Django use
-DJANGO_WSGI_MODULE=hello.wsgi                     # WSGI module name
-```
-на 
-```
-DJANGO_SETTINGS_MODULE=citizensapi.settings            # which settings file should Django use
-DJANGO_WSGI_MODULE=citizensapi.wsgi                    # WSGI module name.
-```
-после чего перезапустите приложение одной из следующих команд
-```
-sudo supervisorctl restart citizens_api
-# или sudo supervisorctl restart citizensapi
-```
-
-Данные моей машины
-```
-IP адрес: 84.201.138.188
-Пользователь: entrant 
-Пароль: cbc3e42a7d6a1d65de2c6d73927b7c4ec966d63122c1cbfbba73bbeca4dd4fbe
-```
-
-Будет невероятно обидно, если одна маленькая ошибка погубит плоды моего труда. Буду Вам очень благодарен.
-
-___
-
 # backendschooltest
 Данный репозиторий содержит исходный код REST API, являющегося результатом выполнения второго задания для поступления в школу бэкенд-разработки Яндекса.
 
