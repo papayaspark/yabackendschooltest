@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "citizens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "citizen_id": {
+            "type": "integer"
+          },
+          "town": {
+            "type": "string"
+          },
+          "street": {
+            "type": "string"
+          },
+          "building": {
+            "type": "string"
+          },
+          "apartment": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "birth_date": {
+            "type": "string"
+          },
+          "gender": {
+            "type": "string"
+          },
+          "relatives": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "citizen_id",
+          "town",
+          "building",
+          "apartment",
+          "name",
+          "birth_date",
+          "gender",
+          "relatives"
+        ]
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "citizens"
+  ]
+}
